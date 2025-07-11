@@ -1,0 +1,62 @@
+
+<!--
+
+<html>
+
+
+<body>
+
+    <h1> the final result</h1>
+
+    <h5> you are {{ result}}</h5>
+</body>
+</html>
+
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Final Result</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #b2ebf2);
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .result-box {
+      background-color: white;
+      padding: 40px 50px;
+      border-radius: 16px;
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+      text-align: center;
+    }
+
+    .result-box h1 {
+      margin-bottom: 20px;
+      color: #2c3e50;
+      font-size: 32px;
+    }
+
+    .result-box h5 {
+      font-size: 22px;
+      color: #27ae60;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="result-box">
+    <h1>🎉 Final Result 🎉</h1>
+    <h5>You are <strong>{{ result }}</strong></h5>
+  </div>
+
+</body>
+</html>
