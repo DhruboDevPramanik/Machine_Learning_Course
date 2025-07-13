@@ -1,0 +1,85 @@
+<!-- 
+
+
+it is the basic html form to take input from user
+
+
+  <!DOCTYPE html>
+<html>
+<body>
+
+<h2>HTML Forms</h2>
+
+<form action="/submit" method='post'>
+  <label for ="science">Science:</label><br>
+  <input type="text" id="science" name="science" value="0"><br>
+  <label for="Maths">Maths:</label><br>
+  <input type="text" id="maths" name="maths" value="0"><br>
+  <label for="C ">C:</label><br>
+  <input type="text" id="c" name="c" value="0"><br>
+  <label for="datascience">Data Science:</label><br>
+  <input type="text" id="datascience" name="datascience" value="0"><br>
+  <label for="submit">if you haved filled all the fields click the submit button</label><br>
+  <input type="submit" value="Submit me">
+</form> 
+
+<p>If you click the "Submit" button, the form-data will be sent to a page called "/submit".</p>
+
+</body>
+</html>
+-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    
+
+    <!-- this is for integrating the css file -->
+     <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+    <!-- this is for integrating the javascript file -->
+     <script type="text/javascript" src="{{ url_for('static', filename='script/script.js') }}"></script>
+
+
+
+  <meta charset="UTF-8">
+  <title>Subject Marks Form</title>
+  
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>Enter Your Marks</h2>
+    <form action="/submit" method="post">
+      <label for="science">Science:</label>
+      <input type="text" id="science" name="science" value="0">
+
+      <label for="maths">Maths:</label>
+      <input type="text" id="maths" name="maths" value="0">
+
+      <label for="c">C:</label>
+      <input type="text" id="c" name="c" value="0">
+
+      <label for="datascience">Data Science:</label>
+      <input type="text" id="datascience" name="datascience" value="0">
+
+      <input type="submit" value="Submit Marks">
+    </form>
+    <p>Please fill all the fields before submitting.</p>
+  </div>
+
+</body>
+</html>
